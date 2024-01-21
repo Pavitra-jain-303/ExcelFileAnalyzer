@@ -45,3 +45,24 @@ export function calculateTimeDifference(dateString1, dateString2) {
     const formattedTimeDifference = `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
     return formattedTimeDifference;
 }
+
+export function areDatesConsecutive(datesSet) {
+    // Convert the Set values to an array and then to Date objects
+    const datesArray = Array.from(datesSet).map(dateString => new Date(dateString));
+
+    // Sort the Date objects
+    datesArray.sort((a, b) => a - b);
+
+    // Check if there are 7 consecutive days
+    for (let i = 0; i < datesArray.length - 6; i++) {
+        const currentDate = datesArray[i];
+        const seventhDay = new Date(currentDate);
+        seventhDay.setDate(currentDate.getDate() + 6);
+
+        if (seventhDay.toISOString().split("T")[0] === datesArray[i + 6].toISOString().split("T")[0]) {
+            return true;  // Found 7 consecutive days
+        }
+    }
+
+    return false;  // No consecutive 7 days found
+}

@@ -1,0 +1,30 @@
+C:\Users\Pavitra Jain\programing\my projects\Assesments\ExcelFileAnalyzer>node index.js
+
+a) who has worked for 7 consecutive days.
+
+File Number     :       Employee Name
+000101          :       Sparks, KeWWeMh
+000424          :       SiWgh, JaspreeM
+000456          :       CEreira Jr, JEse
+000473          :       GAeWdia, JAaW CarXEs
+
+
+
+b) who have less than 10 hours of time between shifts but greater than 1 hour
+
+File Number:    Time Difference:        Employee Name
+
+000153:         01:29:00                CaMaXaWE, CeghaW
+000318:         03:00:24                De Xa Cerda, IgWaciE
+000456:         04:11:00                CEreira Jr, JEse
+000523:         03:56:49                DeXgadiXXE REdarMe, ChrisMiaW S
+000550:         01:09:00                REdrigAez, GraWdEW AWgeX
+
+
+
+c) Who has worked for more than 14 hours in a single shift
+
+File Number     :       Employee Name
+000523          :       DeXgadiXXE REdarMe, ChrisMiaW S
+
+C:\Users\Pavitra Jain\programing\my projects\Assesments\ExcelFileAnalyzer>
